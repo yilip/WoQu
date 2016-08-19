@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <RelativeLayout
+        android:id="@+id/layout_head"
+        style="@style/navbar_style">
+        <Button
+            android:id="@+id/button_back"
+            style="@style/nav_fun_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/icon_back" >
+        </Button>
+        <LinearLayout
+            android:id="@+id/layout_head_category"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/selector_list_bg"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="全部"
+                android:textColor="@color/white"
+                android:textSize="19dp" />
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arrow_down" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_btn_trans"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="4dp"
+            android:minHeight="32dp">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/btn_ok"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/layout_head"
+        android:background="@color/white" >
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:listSelector="#0000"
+            android:padding="6dp"
+            android:numColumns="3" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_head"
+        android:background="#b2000000"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/listView1"
+            style="@style/list_style"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:background="@color/white"
+            android:divider="@color/light_grey_line"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:listSelector="#0000"
+            android:visibility="visible" >
+        </ListView>
+    </FrameLayout>
+    <com.lip.woqu.view.LoadingView
+        android:id="@+id/loadingView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_head"/>
+</RelativeLayout>

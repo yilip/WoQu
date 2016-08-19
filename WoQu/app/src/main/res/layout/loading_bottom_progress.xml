@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="60dp"
+    android:minWidth="180dp"
+    android:gravity="center">
+    <RelativeLayout
+        android:minWidth="110dp"
+        android:id="@+id/rl_main"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:id="@+id/fl_main"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp">
+            <ImageView
+                android:id="@+id/iv_clock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_clock" />
+            <ImageView
+                android:id="@+id/iv_hour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_clock_hour" />
+            <ImageView
+                android:id="@+id/iv_min"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_clock_min" />
+        </RelativeLayout>
+            <TextView
+                android:layout_toRightOf="@+id/fl_main"
+                android:id="@+id/tipTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="数据加载中..."
+                android:textColor="@color/grey"
+                android:textSize="14sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

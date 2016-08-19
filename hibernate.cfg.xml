@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="woQuFactory">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- 本地  -->
+        <property name="hibernate.connection.password">wangliwang</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/woquDB</property>
+        <property name="hibernate.connection.username">root</property>
+        <!-- sae云平台 -->
+<!--         <property name="hibernate.connection.url">jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_woxiangqu</property>
+        <property name="hibernate.connection.username">n1nww5k54m</property>
+        <property name="hibernate.connection.password">kwlymwml0jz0lz5l3zx20m3xz2yjkwlmh2ymlx0w</property> -->
+        
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLMyISAMDialect</property>
+<!--          <property name="maxPoolSize">12</property>
+        <property name="minPoolSize"  >0</property>
+        <property name="maxStatements" >100</property>
+        <property name="initialPoolSize" >3</property>
+        <property name="maxIdleTime" >10</property> -->
+        <property name="idleConnectionTestPeriod" >10</property>
+        <property name="testConnectionOnCheckin" >true</property>
+        <property name="testConnectionOnCheckout">false</property>
+<!--         <property name="preferredTestQuery" >SELECT 1 FROM DUAL</property> -->
+        <mapping resource="./com/lip/woqu/bean/Activity.hbm.xml"/>
+        <mapping resource="./com/lip/woqu/bean/ActivityType.hbm.xml"/>
+        <mapping resource="./com/lip/woqu/bean/Apply.hbm.xml"/>
+        <mapping resource="./com/lip/woqu/bean/Collect.hbm.xml"/>
+        <mapping resource="./com/lip/woqu/bean/User.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

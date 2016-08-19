@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.lip.woqu.activity.fragment.NearyByActivityFragment">
+
+    <RelativeLayout  android:orientation="vertical"
+                    android:id="@+id/ll_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+        android:background="@drawable/activity_bg3">
+
+        <com.lip.woqu.view.refresh.PullToRefreshListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/trans"
+            android:divider="#ccc"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/blank"
+            android:layout_marginTop="-3dp"
+            android:numColumns="3"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/ll_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/small_person" />
+
+            <TextView
+                android:id="@+id/tv_nodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="没有活动"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.lip.woqu.view.ErrorNetView
+            android:id="@+id/error_net_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

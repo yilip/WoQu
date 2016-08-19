@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我去</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="pull_to_refresh_pull_label_down">下拉刷新</string>
+    <string name="pull_to_refresh_release_down">松开刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新...</string>
+    <string name="pull_to_refresh_pull_label_up">下拉加载更多</string>
+    <string name="pull_to_refresh_release_up">松开加载</string>
+
+    <string name="tab_1">首页</string>
+    <string name="tab_2">附近</string>
+    <string name="tab_3">我的</string>
+    <string name="activity_loc">活动位置</string>
+    <!--Title-->
+    <string name="my_publish">我的发布</string>
+    <string name="my_participate">我的报名</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_evaluate">待评价的运动</string>
+    <string name="activity_publish">发布活动</string>
+    <string name="activity_publish2">告诉Ta</string>
+    <!--活动类型-->
+    <string name="activity_all">所有运动</string>
+    <string name="activity_sport">运动</string>
+    <string name="activity_entertainment">娱乐</string>
+    <string name="activity_study">学习</string>
+    <string name="activity_relaxtion">休闲</string>
+    <string name="activity_other">其他活动</string>
+
+    <string name="paticipate">报名</string>
+    <string name="collect">收藏</string>
+    <string name="publish_direct">直接发布</string>
+    <string name="next_step0">上一步</string>
+    <string name="next_step">继续</string>
+    <string name="reset">重置</string>
+    <string name="publish">发布</string>
+    <!--反馈-->
+    <string name="feedback_note">把您的想法告诉我们吧...</string>
+    <string name="publish_hint">  嗯，我小時候的一個願望：同樣是戴著耳機走在街上的路人，我很想知道誰此刻跟我聽的是同一曲。</string>
+    <string name="commit">提交</string>
+
+    <string name="paticipate_failed">报名失败，请重试</string>
+    <string name="unpaticipate_failed">取消报名失败，请重试</string>
+    <string name="collect_failed">收藏失败，请重试</string>
+    <string name="uncollect_failed">取消收藏失败，请重试</string>
+    <string name="net_err_info">网络抽风，请用力刷</string>
+    <string name="settingsActivity_0">手机不支持该操作</string>
+    <string name="settingsActivity_1">本地版本:</string>
+    <string name="settingsActivity_2">服务器版本:</string>
+    <string name="settingsActivity_4">有可用更新</string>
+    <string name="settingsActivity_6">下次再说</string>
+    <string name="settingsActivity_7">您已经是最新版本，无可用更新.</string>
+    <string name="settingsActivity_8">检查更新失败，请重试</string>
+    <string name="settingsActivity_9">无可用更新</string>
+    <string name="settingsActivity_10">重试</string>
+    <string name="error_net_msg">网络不给力</string>
+    <string name="error_net_action">点击重试</string>
+
+
+    <string name="jubao">举报</string>
+    <string name="jubao_success">举报成功，我们会认真处理您的举报</string>
+    <string name="jubao_failed">举报失败，请稍后重试</string>
+    <string name="jubao_exist">您已举报过了哦</string>
+
+    <string name="jubao_thread_delete">该帖子已删除</string>
+    <string name="jubao_comment_delete">该评论已删除</string>
+
+    <string name="notice_shequ_empty">还没有帖子，快来发第一贴吧</string>
+    <string name="notice_hot">没有污染的世界真清净</string>
+    <string name="notice_nearby">恭喜，附近没有污染源</string>
+
+    <string name="checknet">网络异常,请检查您的网络连接</string>
+    <string name="share">分享</string>
+    <string name="delete">删除</string>
+    <string name="notice">提示</string>
+    <string name="btn_cancel">取消</string>
+    <string name="datadbVersionCode">18</string>
+    <string name="life_publish_title">发布</string>
+    <string name="life_comment">评论</string>
+    <!--提示用的-->
+    <string name="collect_success">收藏成功</string>
+    <string name="collect_cancel">取消收藏</string>
+
+    <string name="btn_detail">详情</string>
+    <string name="btn_comment">评论</string>
+
+
+    <string name="life_publish_loading">正在发布...</string>
+    <string name="life_publish_fail">服务器貌似不给力，请稍后重试</string>
+    <string name="life_publish_success">发布成功</string>
+    <string name="life_publish_error">发布内容太少啦，请添加图片或多描述点内容后发布吧</string>
+    <string name="life_publish_error_1">您的内容中有敏感字，请修改后再发布</string>
+    <string name="life_publish_error_2">您已被管理员屏蔽</string>
+    <string name="life_publish_error_3">您的设备已被管理员屏蔽</string>
+    <string name="life_publish_error_4">发帖太频繁，休息一会再发呗</string>
+    <string name="life_publish_error_5">您的评论中有敏感字，请修改后再提交</string>
+    <string name="life_publish_error_6">该贴已被删除</string>
+    <string name="life_publish_error_7">该评论已被删除</string>
+    <string name="time_hour_ago">小时前</string>
+    <string name="time_min_ago">分钟前</string>
+    <string name="time_sec_ago">秒前</string>
+    <string name="time_now_ago">刚刚</string>
+    <string name="input_now_location_tip">输入当前位置</string>
+    <string name="btn_ok">确定</string>
+
+    <string name="exit_app">再按一次退出程序</string>
+    <string name="notitleNote">无标题记录</string>
+    <string name="picNote">图片记录</string>
+    <string name="voiceNote">录音记录</string>
+    <string name="Attach_note">附件记事</string>
+    <string name="server_error">非常抱歉，服务器异常，稍后请重试</string>
+    <string name="isDel">确定要删除吗？</string>
+    <string name="progress_image">正在处理图片</string>
+    <string name="not_found_capture">系统相机不可用!</string>
+    <string name="invalid_pic">无效图片！</string>
+
+    <!-- 涂鸦菜单 -->
+
+    <string name="nick_name">昵称：</string>
+    <string name="mobile_num">手机：</string>
+
+    <string name="i_commented">我的评论</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="life_comment_title">我的评论</string>
+
+    <string name="life_msg_delete">清空</string>
+    <string name="wenxintishi">温馨提示</string>
+
+
+    <string name="more_share_23">网络连接错误,请检查您的网络链接后重试</string>
+    <string name="net_error">网络请求失败，请重试!</string>
+
+    <string name="user_center_message">个人信息</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="suggestion_feed_back">意见反馈</string>
+    <string name="user_icon">头像</string>
+    <string name="user_nick">昵称</string>
+    <string name="user_gender">性别</string>
+    <string name="user_phone">手机</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="wrongName">不合法的用户名,字数不能超过20个</string>
+    <string name="canNotNull">内容不能为空</string>
+
+    <!-- 时间 -->
+    <string name="shijian_shi">时</string>
+    <string name="shijian_fen">分</string>
+    <string name="dian">点</string>
+    <string name="notice_time">距离</string>
+
+    <string name="not_null_content">请说点什么吧</string>
+    <string name="notice_notNotice">不再提示</string>
+    <string name="share_content_tips">分享到微信朋友圈，让更多的人关注，能使该污染源问题更快得到解决！</string>
+    <string name="copy_succuss">成功复制到剪贴板</string>
+    <string name="WXNotInstalled">系统未安装微信客户端</string>
+    <string name="fetch_url_success">成功获取分享的链接地址</string>
+    <string name="other">其它</string>
+    <string name="share_cancel">取消分享</string>
+    <string name="no_app_can_use">没有可供分享的APP</string>
+    <string name="share_success">分享成功！</string>
+    <string name="share_fail">分享失败</string>
+    <string name="share_now">正在分享中，请稍等</string>
+    <string name="sinaOauthErr">新浪微博认证已经过期,请您重新登录</string>
+    <string name="oautherr">授权失败</string>
+    <string name="oauthSuccess">授权成功</string>
+    <string name="openlogining">正在打开登录窗口</string>
+    <string name="renzhengzhong">正在认证中</string>
+    <string name="more_share_0">其他方式分享</string>
+    <string name="more_share_1">短信</string>
+    <string name="more_share_2">微信消息</string>
+    <string name="more_share_222">朋友圈</string>
+    <string name="more_share_3">邮件</string>
+    <string name="more_share_4">内容不能为空</string>
+    <string name="more_share_5">请至少选择一个分享方式</string>
+    <string name="more_share_7">分享图文</string>
+    <string name="more_share_9">推荐一款好用的日历软件-中华万年历</string>
+    <string name="more_share_10">暂无应用程序可以使用</string>
+    <string name="more_share_12">正在发布微博，请稍候...</string>
+    <string name="more_share_13">腾讯微博发送成功</string>
+    <string name="more_share_14">新浪微博发送成功</string>
+    <string name="more_share_15">腾讯微博文字长度超出140了亲，请精简你的博文吧！</string>
+    <string name="more_share_16">新浪微博文字长度超出140了亲，请精简你的博文吧！</string>
+    <string name="more_share_17">错误的腾讯微博图片类型或图片大小</string>
+    <string name="more_share_18">错误的新浪微博图片类型或图片大小</string>
+    <string name="more_share_19">腾讯微博发送失败,小号是没有发微博技能的哦亲~</string>
+    <string name="more_share_20">新浪微博发送失败,请重新尝试</string>
+    <string name="more_share_21">腾讯微博发送失败,发送内容重复,请重新编辑</string>
+    <string name="more_share_22">新浪微博发送失败,发送内容重复,请重新编辑</string>
+    <string name="more_share_24">您的博文超过140字限制，编辑下啦!</string>
+    <!-- <string name="more_share_25">详情：</string> -->
+    <string name="more_share_26">图片不存在！</string>
+    <string name="more_share_27">分享到微信</string>
+    <string name="more_share_28">分享文字</string>
+    <string name="more_share_29">分享截图</string>
+    <string name="more_share_30">图片分享成功！</string>
+    <string name="more_share_31">文字分享成功！</string>
+    <string name="more_share_32">新浪微博</string>
+    <string name="more_share_33">腾讯微博</string>
+    <string name="more_share_34">QQ好友</string>
+    <string name="more_share_35">通过微信平台您可以选择仅分享文本或者分享截图</string>
+    <string name="more_share_36">该微博将于</string>
+    <string name="more_share_37">成功取消定时发布！</string>
+    <string name="more_share_38">网络不给力哦！</string>
+    <string name="more_share_39">分享录音</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <string name="wo">我</string>
+    <string name="notice_no_feed_back">您暂时没有反馈</string>
+    <string name="notice_no_collection">您暂时没有收藏</string>
+    <string name="life_commentget_nodata">您暂时没有评论</string>
+    <string name="notice_no_publish">您暂时还没有发布活动，赶快去发布吧</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_apply">ApplyActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_publish">PublishActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_collect">CollectActivity</string>
+    <string name="title_activity_user_feedback">UserFeedbackActivity</string>
+</resources>

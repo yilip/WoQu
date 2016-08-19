@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/ll_err_net"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="60dp"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/net_error"/>
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/wq_text_light"
+            android:text="@string/net_err_info"
+            />
+        <Button
+            android:id="@+id/btn_error_net"
+            style="@style/button_nav_style"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/settingsActivity_10"
+            android:visibility="gone"
+            android:background="@drawable/selector_meili_btn_common"/>
+    </LinearLayout>
+</RelativeLayout>

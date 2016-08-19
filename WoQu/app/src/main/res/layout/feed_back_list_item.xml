@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><!--生活页面每一个卡片-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_eeeeee">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <cn.etouch.environment.manager.ETNetworkImageView
+                android:id="@+id/imageView2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="环球旅游季"
+                    android:textSize="18sp"
+                    android:textColor="@color/grey_1" />
+
+                <TextView
+                    android:id="@+id/textView_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布与：5小时前"
+                    android:textSize="13sp"
+                    android:textColor="@color/grey_3"
+                    android:textIsSelectable="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="北京"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/grey_3"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_line_title"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/trans"
+            android:layout_below="@+id/linearLayout_title" />
+
+        <cn.etouch.environment.tools.life.LifeUrlTextView
+            android:id="@+id/textView_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_line_title"
+            android:maxLines="5"
+            android:textColor="@color/grey_1"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:text="上美丽找闺蜜！时尚女性社交新选择！"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="15dp"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_pic"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/textView_desc"
+            android:paddingLeft="8dp"
+            android:paddingRight="6dp">
+
+            <cn.etouch.environment.manager.ETNetworkImageView
+                android:id="@+id/imageView_1"
+                android:layout_width="96dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="2dp" />
+
+            <cn.etouch.environment.manager.ETNetworkImageView
+                android:id="@+id/imageView_2"
+                android:layout_width="96dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:layout_toRightOf="@+id/imageView_1"
+                android:layout_marginRight="2dp" />
+
+            <cn.etouch.environment.manager.ETNetworkImageView
+                android:id="@+id/imageView_3"
+                android:layout_width="96dp"
+                android:layout_height="72dp"
+                android:scaleType="centerCrop"
+                android:layout_toRightOf="@+id/imageView_2"
+                android:layout_marginRight="2dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_commentNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout_pic"
+            android:background="@drawable/selector_bg"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/grey_2"
+            android:text="2"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/icon_comment"
+            android:drawablePadding="5dp"/>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/grey_5"
+            android:layout_below="@+id/textView_commentNum"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--背景-->
+    <!--话题页面颜色-->
+    <color name="bg_topic_new">#ff97c8</color>
+    <color name="bg_topic_mine">#ffd167</color>
+    <color name="wq_text_light">#8c8c8c</color>
+    <color name="bg_sport">#918eff</color>
+    <color name="bg_entainment">#bade8e</color>
+    <color name="bg_study">#ffa39c</color>
+    <color name="bg_relaxtion">#82cee8</color>
+    <color name="bg_other">#9cb81c</color>
+    <color name="bg_title">#ff97c8</color>
+
+    <color name="nav_green">#3db963</color>
+    <color name="white">#ffffff</color>
+    <color name="tans_white">#ffffffff</color>
+    <color name="grey_1">#333333</color>
+    <color name="grey_2">#666666</color>
+    <color name="grey_3">#bababa</color>
+    <color name="grey_4">#f0f0f0</color>
+    <color name="grey_5">#d2d2d2</color>
+    <color name="green_1">#39b860</color>
+    <color name="green_2">#2ea452</color>
+    <color name="green_3">#6ac185</color>
+    <color name="separate_line">#c5c5c5</color>
+    <color name="separate_grey">#eeeeee</color>
+    <color name="share_hint">#f6f6f6</color>
+
+    <color name="bottom_white">#f6f1ed</color>
+    <color name="bottom_green">#39b860</color>
+    <color name="bottom_text">#666666</color>
+    <color name="blue_1">#5f8bb0</color>
+    <color name="msgcount_bg">#ff5534</color>
+
+
+    <color name="trans">#0000</color>
+    <color name="trans_white">#8fff</color>
+    <color name="trans_black">#2000</color>
+    <color name="grey">#80000000</color>
+    <color name="light_grey">#eee</color>
+    <color name="light_grey_bg">#f5f5f5</color>
+    <color name="select_bg">#19000000</color>
+    <color name="white_60">#90ffffff</color>
+    <color name="blue">#00a1f2</color>
+
+
+
+    <color name="card_title">#b0000000</color>
+    <color name="card_desc1">#60000000</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_f24949">#ff6666</color>
+    <color name="color_00aaff">#00aaff</color>
+    <color name="color_cceeff">#cceeff</color>
+    <color name="color_00a1f2">#00a1f2</color>
+    <color name="color_2468a2">#2468a2</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_8ac7e5">#8ac7e5</color>
+    <color name="color_3dcc3d">#3dcc3d</color>
+    <color name="white_90">#eeffffff</color>
+    <color name="color_0099e5">#0099e5</color>
+    <color name="dialog_text">#313131</color>
+
+    <color name="color_999999">#999999</color>
+    <color name="balck_13">#21000000</color>
+    <color name="black_19">#30000000</color>
+    <color name="black_50">#88000000</color>
+    <color name="black_70">#B4000000</color>
+
+    <color name="light_grey_line">#19000000</color>
+    <color name="trans_white_task">#3fff</color>
+    <color name="green">#7acc52</color>
+
+    <color name="ml_text_dark">#333333</color>
+    <color name="meili_bg">#F0F0F0</color>
+    <color name="blue_">#00a1f2</color>
+
+    <color name="line_color">#d2d2d2</color>
+    <color name="sel_text_color">#e6e6e6</color>
+    
+</resources>

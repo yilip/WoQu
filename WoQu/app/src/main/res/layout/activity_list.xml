@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/nav_green">
+    <RelativeLayout
+        style="@style/navbar_style">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/nav_fun_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/nav_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="活动"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_1"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:text="筛选"
+            android:gravity="center"/>
+        <View
+            android:layout_width="0.6dp"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@id/tv_search"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout  android:orientation="vertical"
+                     android:id="@+id/ll_root"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:background="@drawable/activity_bg3">
+
+        <com.lip.woqu.view.refresh.PullToRefreshListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/trans"
+            android:divider="#ccc"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:listSelector="@drawable/blank"
+            android:layout_marginTop="-3dp"
+            android:numColumns="3"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/ll_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/small_person" />
+
+            <TextView
+                android:id="@+id/tv_nodata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="没有活动"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.lip.woqu.view.ErrorNetView
+            android:id="@+id/error_net_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

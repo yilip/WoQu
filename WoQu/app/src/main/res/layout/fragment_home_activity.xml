@@ -1,0 +1,273 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center_vertical"
+             tools:context="com.lip.woqu.activity.fragment.HomeActivityFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/activity_bg"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+        android:layout_width="136dp"
+        android:layout_height="90dp"
+        android:id="@+id/topic_hot_rl"
+        android:background="@color/bg_title"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.lip.woqu.view.ETNetworkImageView
+                android:id="@+id/topic_hot_iv"
+                android:src="@drawable/ic_hot_topic_new"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门活动"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/topic_hot_iv"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="90dp"
+            android:id="@+id/topic_mine_rl"
+            android:layout_toRightOf="@id/topic_hot_rl"
+            android:background="@color/bg_title"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <com.lip.woqu.view.ETNetworkImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/topic_mine_iv"
+                    android:src="@drawable/ic_topic_mine"
+                    android:scaleType="centerCrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的活动"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/topic_mine_iv"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+       <RelativeLayout
+        android:layout_width="136dp"
+        android:layout_height="188dp"
+        android:id="@+id/topic_sport_rl"
+        android:layout_marginRight="8dp"
+        android:background="@color/bg_sport"
+        android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我想去"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/textView1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    </RelativeLayout>
+       <RelativeLayout
+        android:layout_width="136dp"
+        android:layout_height="188dp"
+        android:id="@+id/topic_enterainment_rl2"
+        android:layout_toRightOf="@id/topic_sport_rl"
+        android:layout_marginTop="8dp">
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="90dp"
+            android:id="@+id/topic_enterainment_rl"
+            android:background="@color/bg_entainment">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我想去"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="娱乐"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/textView2"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="90dp"
+            android:id="@+id/topic_study_rl"
+            android:background="@color/bg_study"
+            android:layout_below="@id/topic_enterainment_rl"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我想去"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学习"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/textView4"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+       <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="90dp"
+            android:id="@+id/topic_relaxation_rl"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/topic_sport_rl"
+            android:background="@color/bg_relaxtion"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我想去"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="休闲"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/textView3"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+       <RelativeLayout
+            android:layout_width="136dp"
+            android:layout_height="90dp"
+            android:id="@+id/topic_other_rl"
+            android:layout_below="@id/topic_enterainment_rl2"
+            android:layout_toRightOf="@id/topic_relaxation_rl"
+            android:background="@color/bg_other"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我想去"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/textView5"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+   </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

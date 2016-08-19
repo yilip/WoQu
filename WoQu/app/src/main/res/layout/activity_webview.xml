@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/navbar_style">
+
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:src="@drawable/fun_back"
+            android:scaleType="center"
+            android:background="@drawable/selector_bg"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <com.lip.woqu.view.ETWebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/relativeLayout1"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progress="0"
+        android:visibility="invisible" />
+</RelativeLayout>

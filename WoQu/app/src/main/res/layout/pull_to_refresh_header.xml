@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/relativeLayout1"-->
+        <!--android:layout_width="45dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_centerHorizontal="true">-->
+        <!--<ProgressBar-->
+            <!--android:indeterminateDrawable="@drawable/image_progress"-->
+            <!--android:id="@+id/pull_to_refresh_progress"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:indeterminate="true"-->
+            <!--android:visibility="visible" />-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/progress_refresh_face"/>-->
+        <!--</RelativeLayout>-->
+
+    <ImageView
+        android:id="@+id/iv_anim_loading_new"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@anim/anim_loading_new"/>
+    <TextView
+        android:id="@+id/pull_to_refresh_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_anim_loading_new"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="松开到上一天"
+        android:textColor="#a000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pull_to_refresh_text_sub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pull_to_refresh_text"
+        android:gravity="center"
+        android:text="查看上一天"
+        android:textColor="#00f"
+        android:visibility="gone" />
+
+</RelativeLayout>

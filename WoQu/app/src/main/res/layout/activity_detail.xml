@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?><!--生活页面游戏卡片-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    android:background="@color/white">
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/white">
+    <RelativeLayout
+        style="@style/navbar_style">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/nav_fun_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_back" />
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/nav_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="活动详情"
+            android:gravity="center"/>
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:minWidth="64dp">
+            <View
+                android:layout_width="0.6dp"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_share"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                android:textSize="16sp"
+                android:padding="2dp"
+                android:textColor="@color/white"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/travel_1"
+        android:padding="2dp">
+
+        <RelativeLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:id="@+id/rl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp">
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <com.lip.woqu.view.ETNetworkImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/default_avatar"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:id="@+id/ll_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="隔壁老李"
+                        android:textSize="18sp"
+                        android:textColor="@color/grey_1" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="运动"
+                    android:textSize="22dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/tv_type"-->
+                <!--android:paddingLeft="12dp"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:paddingRight="12dp"-->
+                <!--android:text="运动"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:textSize="22dp"-->
+                <!--android:layout_gravity="center_vertical"/>-->
+
+        </RelativeLayout>
+
+        <com.lip.woqu.view.LifeUrlTextView
+            android:id="@+id/tv_activity_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_title"
+            android:maxLines="5"
+            android:textColor="@color/grey_1"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:text="    嗯，我小時候的一個願望：同樣是戴著耳機走在街上的路人，我很想知道誰此刻跟我聽的是同一曲。
+"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="4dp"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_activity_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_participate"
+                    android:layout_width="120dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/selector_infunce_bg"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:minWidth="64dp">
+
+                    <TextView
+                        android:id="@+id/tv_apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报名"
+                        android:textSize="16sp"
+                        android:layout_marginRight="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_collect"
+                    android:layout_width="100dp"
+                    android:layout_height="32dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/selector_share_bg"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="4dp"
+                    android:minWidth="64dp">
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv_share"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/icon_collect"-->
+                        <!--android:layout_marginRight="8dp"/>-->
+                    <TextView
+                        android:id="@+id/tv_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:text="收藏" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_location"
+        android:padding="4dp"
+        android:background="@color/white">
+        <TextView
+            android:text="活动地点："
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/grey_1"
+            android:textSize="14sp"
+            android:paddingLeft="4dp"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_location"
+            android:padding="6dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selector_list_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_tool_place"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/iv_tool_place"
+                android:layout_marginLeft="1dp"
+                android:drawablePadding="6dp" />
+            <TextView
+                android:id="@+id/tv_addr"
+                android:text="望京西园四区"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/blue_1"
+                android:maxLines="2"
+                android:drawablePadding="6dp"
+                android:textSize="14sp"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_distance"-->
+                <!--android:text="(距离800米)"-->
+                <!--android:layout_marginLeft="6dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textColor="@color/blue_1"-->
+                <!--android:drawablePadding="6dp"-->
+                <!--android:textSize="14sp"-->
+                <!--android:singleLine="true"-->
+                <!--android:layout_height="fill_parent"-->
+                <!--android:layout_width="wrap_content" />-->
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/selector_list_bg"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="2dp"-->
+                <!--android:paddingRight="12dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="基本信息"-->
+                    <!--android:textColor="@color/grey_1"-->
+                    <!--android:textSize="18sp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/line_color" />-->
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="活动时间："
+                    android:textColor="@color/grey_1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="4dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="2015/3/28 16:30"
+                    android:textColor="@color/blue_1"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line_color" />
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_place"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="@drawable/selector_list_bg"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="12dp"-->
+                <!--android:paddingRight="12dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:text="地点"-->
+                    <!--android:textColor="@color/grey_1"-->
+                    <!--android:textSize="15sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_place"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:text="奥林匹克森林公园"-->
+                    <!--android:textColor="@color/grey_2"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:layout_marginRight="12dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/line_color" />-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/ll_time"
+                android:background="@color/light_grey"
+                android:id="@+id/tv1" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="报名条件："
+                    android:textColor="@color/grey_1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:id="@+id/ll_contion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+                <LinearLayout
+                    android:id="@+id/ll_gather_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_list_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="集合时间："
+                        android:padding="2dp"
+                        android:textColor="@color/grey_1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gather_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="2015/3/28 16:30"
+                        android:textColor="@color/grey_2"
+                        android:textSize="12sp"
+                        android:layout_marginRight="12dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+                <LinearLayout
+                    android:id="@+id/ll_gather_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_list_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="集合地点："
+                        android:padding="2dp"
+                        android:textColor="@color/grey_1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_gather_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="奥林匹克森林公园"
+                        android:textColor="@color/grey_2"
+                        android:textSize="12sp"
+                        android:layout_marginRight="12dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+                <LinearLayout
+                    android:id="@+id/ll_people_num"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_list_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="人数限制："
+                        android:padding="2dp"
+                        android:textColor="@color/grey_1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="1~5人"
+                        android:textColor="@color/grey_2"
+                    android:textSize="12sp"
+                    android:layout_marginRight="12dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+                <LinearLayout
+                    android:id="@+id/ll_other"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/selector_list_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="其他限制："
+                        android:padding="2dp"
+                        android:textColor="@color/grey_1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:gravity="center_horizontal"
+                        android:singleLine="true"
+                        android:text="单身|IT男|爱聊天"
+                        android:textColor="@color/grey_2"
+                        android:textSize="12sp"
+                        android:layout_marginRight="12dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+
+                android:background="@color/light_grey" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="补充说"
+                    android:textColor="@color/grey_1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line_color" />
+            <LinearLayout
+                android:id="@+id/ll_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <com.lip.woqu.view.LifeUrlTextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout_title"
+                    android:maxLines="5"
+                    android:textColor="@color/grey_1"
+                    android:textSize="13sp"
+                    android:clickable="true"
+                    android:text="    嗯，我小時候的一個願望：同樣是戴著耳機走在街上的路人，我很想知道誰此刻跟我聽的是同一曲。
+"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="4dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/ll_desc"
+                android:background="@color/light_grey" />
+            <LinearLayout
+                android:id="@+id/ll_end_time"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/selector_list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="报名截止时间："
+                    android:textColor="@color/grey_1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="4dp"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="2015/3/28 16:30"
+                    android:textColor="@color/blue_1"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><!--生活页面每一个卡片-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/travel_1"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <com.lip.woqu.view.ETNetworkImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/default_avatar"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+               <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="隔壁老李"
+                android:textSize="18sp"
+                android:textColor="@color/grey_1" />
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="男"
+                    android:textSize="15sp"
+                    android:textColor="@color/grey_1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="5小时前"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/grey_3"/>
+        </LinearLayout>
+
+        <com.lip.woqu.view.LifeUrlTextView
+            android:id="@+id/tv_activity_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout_title"
+            android:maxLines="5"
+            android:textColor="@color/grey_1"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:text="    嗯，我小時候的一個願望：同樣是戴著耳機走在街上的路人，我很想知道誰此刻跟我聽的是同一曲。"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="4dp"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_activity_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="8dp">
+
+            <LinearLayout
+                android:id="@+id/ll_participate"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/bg_influnce_normal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:minWidth="64dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名:"
+                    android:textSize="16sp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:text="6/N" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_collect"
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/selector_share_bg"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginLeft="4dp"
+                android:minWidth="64dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:text="收藏:" />
+                <TextView
+                    android:id="@+id/tv_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:padding="4dp"
+                    android:textColor="@color/white"
+                    android:text="1.2k" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+      </RelativeLayout>
+    </RelativeLayout>
